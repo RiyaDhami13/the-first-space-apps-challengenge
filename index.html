@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <title>Cosmic Animation</title>
+  <style>
+    body {
+      background-image: url("https://images.nightcafe.studio/jobs/lYLe60VHT8AXrlKbdfyW/lYLe60VHT8AXrlKbdfyW--1--gylib.jpg?tr=w-1600,c-at_max");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .container {
+      width: 150px;
+      height: 100px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .star {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: white;
+      border-radius: 50%;
+    }
+    .animation {
+      animation: move 7s infinite;
+    }
+    @keyframes move {
+      from {
+        top: 0;
+        left: 0;
+      }
+      to {
+        top: 100%;
+        left: 100%;
+      }
+    }
+    .button {
+      border-radius: 8px;
+      position: absolute;
+      top:10;
+      bottom:-300%;
+      left: 20;
+      width: 100%;
+      height: 50px;
+      background-color:#e4e0d7;
+      opacity:0.5;
+      color:black;
+      font-size: 20px;
+      cursor: pointer;
+      
+    }
+  </style>
+</head>
+<body>
+  <script src='index.js'></script>
+  <div class="container">
+    <div class="star animation"></div>
+    <div class="star animation"></div>
+    <div class="star animation"></div>
+    <div class="star animation"></div>
+    <div class="star animation"></div>
+   <div class="button">
+     <div class = "container"
+     width: 300px;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+          right: 0;><strong><center><bold>Start your journey </bold></center></strong>   
+     </div>
+
+  </div>
+    
+    
+    <div class="the bar">
+      <div class="skill-main">
+      <div class="skill-wrrap">
+        <div class="skill-name">
+          <h2 style="color:blue">Your status in mission</h2></div>
+        <div class="skill-bar">
+          <div class="skill-per" per="0"></div>
+        </div>
+      </div></div>
+
+      <style>
+  .skill-bar {
+    position: fixed;
+    bottom: 0;
+    width: 50%;
+  
+  }
+    
+        .skill-name {
+          position:fixed;
+          bottom:0;
+          width:100%;
+          bottom:0;
+       display: block;
+        }
+      </style>
+
+  <script>
+    document.querySelector(".button").addEventListener("click", function() {
+      window.location.href = "rocketlaunch.html";
+    });
+  </script>
+</body>
+</html>
+
+
+
+
